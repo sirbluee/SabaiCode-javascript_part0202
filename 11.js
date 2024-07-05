@@ -1,15 +1,15 @@
 function countVowels (str){
-    let countVowels = 0;
+    let numbersVowels = 0;
     const vowels = "aeiuo";
     str = str.toLowerCase();
     for(let char of str){
         if(vowels.includes(char)){
-            vowelsCount++;
+            numbersVowels++;
         }
     }
-    return countVowels;
+    return numbersVowels;
 }
 
 const inputString = "Hello world";
-const results = vowelsCount(inputString);
+const results = countVowels(inputString);
 console.log(results);
